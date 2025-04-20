@@ -144,7 +144,7 @@
   <header>
     <h1>FlyFlex.pt</h1>
     <nav>
-      <a href="#voos">Voos</button>
+      <a href="#voos">Voos</a>
       <a href="#hoteis">Hotéis</a>
       <a href="#tours">Atividades</a>
       <a href="#destinos">Destinos</a>
@@ -155,14 +155,19 @@
   <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1500&q=80'); background-size: cover; background-position: center;">
     <h2>Encontra o teu próximo destino</h2>
     <p>Compara preços de voos, hotéis e experiências com estilo e economia.</p>
-  <button onclick="buscarHoteis()" class="btn-afiliado">🏨 Buscar Hotéis</button>
   </section>
 
   <section class="search-box" id="voos">
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+      <input type="text" placeholder="Destino" style="padding: 0.8rem; border-radius: 8px; border: none; font-size: 1rem; background-color: #ff6b00; color: white;" />
+      <input type="date" placeholder="Data de Ida">
+      <input type="date" placeholder="Data de Volta">
+      <button onclick="buscarDestino()" class="btn-afiliado">🔍 Buscar Voos com FlyFlex</button>
+    </div>
     <input type="text" placeholder="Destino" style="padding: 0.8rem; border-radius: 8px; border: none; font-size: 1rem; background-color: #ff6b00; color: white;" style="padding: 0.8rem; border-radius: 8px; border: none; font-size: 1rem; background-color: #ff6b00; color: white;" />
     <input type="date" placeholder="Data de Ida">
     <input type="date" placeholder="Data de Volta">
-    <button onclick="buscarDestino()" class="btn-afiliado">
+    <a href="https://tp.media/r?marker=624512&trs=409156&p=8626&u=https%3A%2F%2Ftrip.com&campaign_id=121" target="_blank" class="btn-afiliado">
       🔍 Buscar Voos com FlyFlex
     </a>
   </section>
@@ -224,3 +229,10 @@
   </footer>
 </body>
 </html>
+
+  <section class="search-box" id="hoteis">
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 2rem;">
+      <input type="text" placeholder="Destino" style="padding: 0.8rem; border-radius: 8px; border: none; font-size: 1rem; background-color: #ff6b00; color: white;" />
+      <button onclick="buscarHoteis()" class="btn-afiliado">🏨 Buscar Hotéis</button>
+    </div>
+  </section>
