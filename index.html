@@ -49,17 +49,31 @@
       max-width: 800px;
       margin: 3rem auto;
       text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .search-box input[type="date"] {
+      padding: 0.8rem;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+      background-color: #ff6b00;
+      color: white;
+    }
+    .search-box input[type="date"]::placeholder {
+      color: white;
     }
     .btn-afiliado {
-      display: inline-block;
       padding: 1rem 2rem;
       background-color: #ff6b00;
       color: white;
       text-decoration: none;
       border-radius: 8px;
       font-weight: 600;
-      margin-top: 2rem;
       transition: background 0.3s ease;
+      align-self: center;
     }
     .btn-afiliado:hover {
       background-color: #e05f00;
@@ -75,20 +89,53 @@
     }
     .destinos {
       display: flex;
-      gap: 1rem;
       flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      padding-top: 2rem;
     }
     .card {
-      background-color: #292929;
-      padding: 1rem;
-      border-radius: 10px;
-      flex: 1 1 calc(33% - 1rem);
-      min-width: 250px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      position: relative;
+      width: 300px;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
     }
     .card:hover {
-      background-color: #333;
-      transition: 0.3s;
+      transform: scale(1.03);
+    }
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+      color: white;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+    .overlay h2 {
+      margin: 0 0 0.5rem 0;
+      color: #ff6b00;
+    }
+    .overlay p {
+      margin: 0.5rem 0;
+    }
+    .overlay a {
+      display: inline-block;
+      margin-right: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #ff6b00;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+    .overlay a:hover {
+      background-color: #e85e00;
     }
     footer {
       background: #1c1c1c;
@@ -103,11 +150,11 @@
   <header>
     <h1>FlyFlex.pt</h1>
     <nav>
-      <a href="#voos">Voos</a>
-      <a href="#hoteis">Hotéis</a>
-      <a href="#tours">Atividades</a>
-      <a href="#destinos">Destinos</a>
-      <a href="#contato">Contato</a>
+      <a href="index.html">Voos</a>
+      <a href="hoteis.html">Hotéis</a>
+      <a href="tours.html">Atividades</a>
+      <a href="blog.html">Blog</a>
+      <a href="sobre.html">Sobre</a>
     </nav>
   </header>
 
@@ -117,25 +164,36 @@
   </section>
 
   <section class="search-box" id="voos">
+    <input type="date" placeholder="Data de Ida">
+    <input type="date" placeholder="Data de Volta">
     <a href="https://tp.media/r?marker=624512&trs=409127&p=4114&u=https%3A%2F%2Faviasales.com&campaign_id=100" target="_blank" class="btn-afiliado">
       🔍 Buscar Voos com FlyFlex
     </a>
   </section>
 
   <section class="section" id="destinos">
-    <h3>🌍 Destinos em alta</h3>
+    <h3>🌍 Destinos em Alta</h3>
     <div class="destinos">
-      <div class="card">
-        <strong>Lisboa → Paris</strong>
-        <p>Desde 35€</p>
+      <div class="card" style="background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80');">
+        <div class="overlay">
+          <h2>França</h2>
+          <p>Desde: 35€</p>
+          <a href="https://www.aviasales.com/?marker=624512.Zz38cd7e6c2a7c45ffba8723e-624512&params=LISFR1" target="_blank">✈️ Ver Voos</a>
+        </div>
       </div>
-      <div class="card">
-        <strong>Porto → Roma</strong>
-        <p>Desde 42€</p>
+      <div class="card" style="background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=600&q=80');">
+        <div class="overlay">
+          <h2>Alemanha</h2>
+          <p>Desde: 42€</p>
+          <a href="https://tp.media/r?marker=624512&trs=409127&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2F%3Fparams%3DLISDE1&campaign_id=100" target="_blank">✈️ Ver Voos</a>
+        </div>
       </div>
-      <div class="card">
-        <strong>Lisboa → Barcelona</strong>
-        <p>Desde 29€</p>
+      <div class="card" style="background-image: url('https://images.unsplash.com/photo-1586439181686-d8aa3b6d076c?auto=format&fit=crop&w=600&q=80');">
+        <div class="overlay">
+          <h2>Emirados Árabes</h2>
+          <p>Desde: 59€</p>
+          <a href="https://tp.media/r?marker=624512&trs=409127&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2F%3Fparams%3DLISAE1&campaign_id=100" target="_blank">✈️ Ver Voos</a>
+        </div>
       </div>
     </div>
   </section>
