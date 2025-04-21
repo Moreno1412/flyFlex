@@ -77,5 +77,69 @@
       setInterval(atualizarDestino, 2000);
     });
   </script>
+
+  <div class="post">
+    <h2>5 Truques para Encontrar Voos Baratos Saindo de Lisboa</h2>
+    <p>Viajar saindo de Lisboa pode ser mais barato do que imagina. Com alguns truques simples, é possível poupar muito na compra de passagens. A seguir, veja dicas que ajudam a encontrar <strong>voos baratos saindo de Lisboa</strong> para os principais destinos da Europa.</p>
+    <h3>1. Use comparadores de preços</h3>
+    <p>Sites como <a href="https://tp.media/r?marker=624512&trs=409156&p=8626&u=https%3A%2F%2Ftrip.com&campaign_id=121" target="_blank">Trip.com</a> comparam centenas de companhias aéreas em segundos. Assim, você vê todas as opções num só lugar e escolhe a mais barata.</p>
+    <h3>2. Seja flexível nas datas</h3>
+    <p>Evitar voar aos fins de semana e feriados pode reduzir o preço da passagem em até 40%. Viajar em dias úteis, como terça ou quarta-feira, costuma ser mais barato.</p>
+    <h3>3. Compre com antecedência</h3>
+    <p>Reservar com 30 a 60 dias de antecedência é o ideal. Promoções-relâmpago existem, mas são menos frequentes.</p>
+    <h3>4. Ative alertas de preços</h3>
+    <p>Ferramentas como Trip.com permitem criar alertas para voos específicos. Assim, você recebe um aviso quando o preço cair.</p>
+    <h3>5. Verifique aeroportos alternativos</h3>
+    <p>Lisboa é o principal hub, mas cidades próximas como Porto ou Madrid podem oferecer voos mais baratos. Compare!</p>
+    <p><strong>👉 Quer comparar agora?</strong> Acesse nosso parceiro oficial: <a href="https://tp.media/r?marker=624512&trs=409156&p=8626&u=https%3A%2F%2Ftrip.com&campaign_id=121" target="_blank">Ver voos baratos</a></p>
+  </div>
+
+  <div class="post">
+    <h2>Hotéis Bons e Baratos em Paris: Onde Ficar Sem Gastar Muito</h2>
+    <p>Paris é uma das cidades mais visitadas do mundo, mas isso não significa que você precisa gastar uma fortuna para se hospedar. Veja como encontrar <strong>hotéis bons e baratos em Paris</strong> usando comparadores de preços e dicas práticas.</p>
+    <h3>1. Prefira bairros menos turísticos</h3>
+    <p>Ficar perto da Torre Eiffel ou do Louvre é caro. Bairros como Montmartre, Belleville e Bastille oferecem ótimas opções com bons preços.</p>
+    <h3>2. Use comparadores como Trip.com</h3>
+    <p><a href="https://tp.media/r?marker=624512&trs=409156&p=8626&u=https%3A%2F%2Ftrip.com&campaign_id=121" target="_blank">Trip.com</a> permite filtrar por localização, preço e avaliação. Você encontra ofertas de hotéis em Paris com até 50% de desconto.</p>
+    <h3>3. Verifique avaliações e notas</h3>
+    <p>Um hotel barato nem sempre significa baixa qualidade. Leia os comentários e veja as avaliações de outros viajantes para fazer a melhor escolha.</p>
+    <h3>4. Evite épocas de alta temporada</h3>
+    <p>Visitar Paris fora do verão europeu (junho a agosto) ou grandes feriados pode garantir preços mais baixos em hospedagem.</p>
+    <h3>5. Reserve com antecedência</h3>
+    <p>Os hotéis com melhor custo-benefício esgotam rápido. Planeje e garanta o seu com pelo menos 30 dias de antecedência.</p>
+    <p><strong>👉 Ver hotéis em <span id="cidade-dinamica-hotel" style="color:#ff6b00;">Paris</span> agora:</strong> <a href="https://tp.media/r?marker=624512&trs=409156&p=8626&u=https%3A%2F%2Ftrip.com&campaign_id=121" target="_blank">Buscar hotéis com desconto</a></p>
+  </div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const cidades = ["Paris", "Lisboa", "Roma", "Barcelona", "Londres", "Berlim", "Amsterdam"];
+    let i = 0;
+    const cidadeSpan = document.getElementById("cidade-dinamica-hotel");
+    function atualizarCidade() {
+      cidadeSpan.textContent = cidades[i];
+      i = (i + 1) % cidades.length;
+    }
+    atualizarCidade();
+    setInterval(atualizarCidade, 3000);
+  });
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const cidades = ["Paris", "Lisboa", "Roma", "Barcelona", "Londres", "Berlim", "Amsterdam"];
+    let i = 0;
+    const cidadeSpan = document.getElementById("cidade-dinamica-hotel");
+    function atualizarCidade() {
+      cidadeSpan.textContent = cidades[i];
+      i = (i + 1) % cidades.length;
+    }
+    atualizarCidade();
+    setTimeout(atualizarCidade, 1000);
+    setInterval(atualizarCidade, 3000);
+  });
+</script>
+
 </body>
 </html>
