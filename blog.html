@@ -14,7 +14,7 @@
   </style>
 </head>
 <body>
-  <h1>✈️ Blog FlyFlex</h1>
+  <h1><a href="index.html" style="color:#ff6b00; text-decoration:none;">✈️ Blog FlyFlex</a></h1>
 
   <div class="post">
     <h2>5 destinos baratos saindo de Lisboa</h2>
@@ -36,6 +36,62 @@
     <p>No FlyFlex, monitoramos constantemente os preços mais baixos para oferecer as melhores oportunidades. Recomendamos visitar nossa <a href="index.html">página principal</a> sempre que fores planejar uma viagem.</p>
     <p>E claro, acede diretamente ao motor de busca oficial e garante tua reserva com segurança: <a href="https://tp.media/r?marker=624512&trs=409156&p=8626&u=https%3A%2F%2Fpt.trip.com%2F%3Flocale%3Dpt_pt&campaign_id=121" target="_blank">Buscar voos agora</a></p>
   </div>
+
+  <aside id="sidebar-ofertas" style="
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100vh;
+    background: #1c1c1c;
+    color: white;
+    padding: 1rem;
+    overflow-y: auto;
+  ">
+    <h2 style="color:#ff6b00;">🔥 Ofertas em Tempo Real</h2>
+    <ul style="list-style: none; padding-left: 0;"></ul>
+  </aside>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const ofertas = 
+[
+  { destino: "Paris", preco: "29€", url: "https://tp.media/r?marker=624512&trs=409156&p=8626&u=https://pt.trip.com/flights/from-lisbon-to-paris/&campaign_id=121" },
+  { destino: "Roma", preco: "34€", url: "https://tp.media/r?marker=624512&trs=409156&p=8626&u=https://pt.trip.com/flights/from-lisbon-to-rome/&campaign_id=121" },
+  { destino: "Madrid", preco: "45€/noite", url: "https://tp.media/r?marker=624512&trs=409156&p=8626&u=https://pt.trip.com/hotels/madrid-hotels-list-3603/&campaign_id=121" },
+  { destino: "Amsterdam", preco: "41€", url: "https://tp.media/r?marker=624512&trs=409156&p=8626&u=https://pt.trip.com/flights/from-lisbon-to-amsterdam/&campaign_id=121" },
+  { destino: "Berlim", preco: "38€", url: "https://tp.media/r?marker=624512&trs=409156&p=8626&u=https://pt.trip.com/flights/from-lisbon-to-berlin/&campaign_id=121" },
+  { destino: "Barcelona", preco: "32€", url: "https://tp.media/r?marker=624512&trs=409156&p=8626&u=https://pt.trip.com/flights/from-lisbon-to-barcelona/&campaign_id=121" },
+  { destino: "Londres", preco: "36€", url: "https://tp.media/r?marker=624512&trs=409156&p=8626&u=https://pt.trip.com/flights/from-lisbon-to-london/&campaign_id=121" },
+  { destino: "Viena", preco: "44€", url: "https://tp.media/r?marker=624512&trs=409156&p=8626&u=https://pt.trip.com/flights/from-lisbon-to-vienna/&campaign_id=121" },
+  { destino: "Praga", preco: "39€", url: "https://tp.media/r?marker=624512&trs=409156&p=8626&u=https://pt.trip.com/flights/from-lisbon-to-prague/&campaign_id=121" },
+  { destino: "Zurique", preco: "50€", url: "https://tp.media/r?marker=624512&trs=409156&p=8626&u=https://pt.trip.com/flights/from-lisbon-to-zurich/&campaign_id=121" },
+  { destino: "Bruxelas", preco: "33€", url: "https://tp.media/r?marker=624512&trs=409156&p=8626&u=https://pt.trip.com/flights/from-lisbon-to-brussels/&campaign_id=121" }
+]
+;
+
+  const aside = document.getElementById("sidebar-ofertas");
+  const lista = aside.querySelector("ul");
+
+  function atualizar() {
+    lista.innerHTML = "";
+    const escolhidas = [...ofertas].sort(() => 0.5 - Math.random()).slice(0, 4);
+    escolhidas.forEach(oferta => {
+      const li = document.createElement("li");
+      li.style.marginBottom = "1rem";
+      li.innerHTML = `✈️ ${oferta.destino} desde <strong>${oferta.preco}</strong><br>
+        <a href="${oferta.url}" target="_blank" style="color:#ff6b00;">Ver agora</a>`;
+      lista.appendChild(li);
+    });
+  }
+
+  atualizar();
+  setInterval(atualizar, 15000);
+});
+</script>
+
 
 </body>
 </html>
