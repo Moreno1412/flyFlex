@@ -2,19 +2,18 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <title>FlyFlex.pt – Viagens</title>
-  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-
-  <meta name="description" content="Compare voos baratos e hotéis incríveis com FlyFlex.pt. Descubra destinos e economize nas suas viagens.">
-  <meta name="keywords" content="voos baratos, hotéis em promoção, viagens low cost, Lisboa, Europa, passagens aéreas, FlyFlex">
+  <meta charset="UTF-8" />
+  <title>FlyFlex.pt – Voos Baratos, Hotéis e Destinos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compare voos baratos e hotéis em promoção com a FlyFlex.pt. Descubra os melhores destinos para viajar com economia, saindo de Lisboa e outras cidades.">
+  <meta name="keywords" content="voos baratos, hotéis em promoção, viagens baratas, viagens de Lisboa, FlyFlex, Trip.com, destinos em alta">
   <meta name="author" content="FlyFlex.pt">
   <meta property="og:title" content="FlyFlex.pt – Viaja com estilo e economia">
-  <meta property="og:description" content="Compara voos baratos e hotéis incríveis com FlyFlex.pt">
+  <meta property="og:description" content="Compare preços de passagens aéreas e hotéis com FlyFlex.pt e economize nas suas viagens.">
   <meta property="og:image" content="https://flyflex.pt/capa.jpg">
   <meta property="og:url" content="https://flyflex.pt">
   <meta name="twitter:card" content="summary_large_image">
-
+  <link rel="canonical" href="https://flyflex.pt/" />
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -126,17 +125,18 @@
     <nav>
       <a href="#voos">Voos</a>
       <a href="#destinos">Destinos</a>
-      <a href="#mais-destinos">Mais</a>
-    <a href="blog.html">Blog</a></nav>
+      <a href="#hoteis">Hotéis</a>
+      <a href="blog.html">Blog</a>
+    </nav>
   </header>
 
   <section class="hero" id="voos">
     <h2>Encontra o teu próximo destino</h2>
     <p>Compara voos e hotéis com os melhores preços</p>
-    <input type="text" placeholder="Destino">
-    <input type="date">
-    <input type="date">
-    <a href="https://tp.media/r?marker=624512&trs=409156&p=8626&u=https%3A%2F%2Fus.trip.com%2F%3Flocale%3Den-us&campaign_id=121" target="_blank">🔍 Buscar Voos com FlyFlex</a>
+    <input type="text" placeholder="Destino" aria-label="Destino de viagem">
+    <input type="date" aria-label="Data de ida">
+    <input type="date" aria-label="Data de volta">
+    <a href="https://tp.media/r?marker=624512&trs=409156&p=8626&u=https%3A%2F%2Fus.trip.com%2F%3Flocale%3Den-us&campaign_id=121" target="_blank" rel="noopener noreferrer">🔍 Buscar Voos com FlyFlex</a>
   </section>
 
   <section class="section" id="destinos">
@@ -159,36 +159,33 @@
     </div>
   </section>
 
-  
-<section class="section" id="hoteis">
-  <h2>🏨 Hotéis em Destaque</h2>
-  <div class="cards">
-    <div class="card" style="background-image:url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80')">
-      <div class="overlay">
-        <h3>Paris</h3>
-        <p>Desde: 49€/noite</p>
+  <section class="section" id="hoteis">
+    <h2>🏨 Hotéis em Destaque</h2>
+    <div class="cards">
+      <div class="card" style="background-image:url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80')" alt="Hotel em Paris">
+        <div class="overlay">
+          <h3>Paris</h3>
+          <p>Desde: 49€/noite</p>
+        </div>
+      </div>
+      <div class="card" style="background-image:url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=600&q=80')" alt="Hotel em Dubai">
+        <div class="overlay">
+          <h3>Dubai</h3>
+          <p>Desde: 65€/noite</p>
+        </div>
       </div>
     </div>
-    <div class="card" style="background-image:url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=600&q=80')">
-      <div class="overlay">
-        <h3>Dubai</h3>
-        <p>Desde: 65€/noite</p>
-      </div>
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="https://tp.media/r?marker=624512&trs=409156&p=8626&u=https%3A%2F%2Fpt.trip.com%2F%3FSID%3D2209817%26allianceid%3D1094387%26locale%3Dpt-pt%26trip_sub1%3De5aeca06d0ff48058421bbd28-624512%26utm_campaign%3D624512&campaign_id=121"
+         target="_blank" class="btn-afiliado" style="background:#ff6b00; padding:1rem 2rem; border-radius:8px; color:white; text-decoration:none;">
+         🏨 Ver Mais Hotéis
+      </a>
     </div>
-  </div>
-  <div style="text-align:center; margin-top:2rem;">
-    <a href="https://tp.media/r?marker=624512&trs=409156&p=8626&u=https%3A%2F%2Fpt.trip.com%2F%3FSID%3D2209817%26allianceid%3D1094387%26locale%3Dpt-pt%26trip_sub1%3De5aeca06d0ff48058421bbd28-624512%26utm_campaign%3D624512&campaign_id=121"
-       target="_blank" class="btn-afiliado" style="background:#ff6b00; padding:1rem 2rem; border-radius:8px; color:white; text-decoration:none;">
-       🏨 Ver Mais Hotéis
-    </a>
-  </div>
-</section>
-
-
+  </section>
 
   <footer>
     &copy; 2025 FlyFlex.pt – Todos os direitos reservados.
   </footer>
-<script src="promo.js"></script>
+  <script src="promo.js"></script>
 </body>
 </html>
